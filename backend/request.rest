@@ -1,0 +1,31 @@
+GET http://localhost:5000/users
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJGaXJkYW4iLCJlbWFpbCI6ImZpcmRhbkBzdHVkZW50LnViLmFjLmlkIiwiaWF0IjoxNzQyMTI1MTk2LCJleHAiOjE3NDIxMjUyMTF9.KVQ_egapnWlcfCuYSZ2U4BV4yt8qK5bUIxKYT_0-bB0
+###
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Firdan2",
+    "email": "firdan@student.ub.ac.id",
+    "nim": "225",
+    "password": "123456",
+    "confPassword": "123456"
+ }
+
+###
+//login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "firdan@student.ub.ac.id",
+    "password": "123456"
+ }
+
+###
+
+get http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
